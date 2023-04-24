@@ -109,6 +109,9 @@
     max-height: 108vh;
     overflow-y: auto;
   }
+  .container .contenedor {
+    width: 45%;
+  }
 
   .container .contenedor .container-grid::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -132,6 +135,9 @@
 @media screen and (max-width: 400px) {
   .container {
     padding: 0.7em;
+  }
+  .container .contenedor .container-grid {
+    max-height: unset;
   }
   .container .container-bar-left .bar-left {
     width: auto;

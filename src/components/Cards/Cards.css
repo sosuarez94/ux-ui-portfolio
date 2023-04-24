@@ -34,4 +34,8 @@
     height: 120px;
 }
 
-
+@media screen and (max-width:500px){
+    .card:hover {
+        box-shadow: unset;
+    }
+}
