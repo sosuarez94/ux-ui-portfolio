@@ -20,7 +20,7 @@ export const SideBarLeft = () => {
     <div className="container-bar-left">
       <div className='bar-left'>
         <div className='img-profile'>
-          <img src={user.images[imageIndex]} alt='cv-img' className='img-profile-transition' />
+          <img loading='lazy' src={user.images[imageIndex]} alt='cv-img' className='img-profile-transition' />
         </div>
         <h3 className='name'>{user.name}</h3>
         <div>
@@ -40,8 +40,8 @@ export const SideBarLeft = () => {
         </ul>
 
         <a className='download-cv' href={user.cv} download="cv-portfolio.pdf">
-          <img src={user.icon} alt="user-icon" />
-          CV
+          <img loading='lazy' src={user.icon} alt="user-icon" />
+          <span>Currículum</span>
         </a>
 
         <div className='footer-left'>
@@ -50,7 +50,7 @@ export const SideBarLeft = () => {
               user.contacme.map((m, index) =>
                 <li key={index}>
                   <a href={m.url} target="_blank" rel="noreferrer" className='logo-img'>
-                    <img src={m.img} alt='icono-redSocial' /></a>
+                    <img loading='lazy' src={m.img} alt='icono-redSocial' /></a>
                 </li>
               )
             }
@@ -62,7 +62,7 @@ export const SideBarLeft = () => {
         {
           user.hobbies.map((m, index) =>
             <div key={index} className="hobbie-img">
-              <img src={m.img} alt={m.name} />
+              <img loading='lazy' src={m.img} alt={m.name} />
             </div>
           )
         }
